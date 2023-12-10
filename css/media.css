@@ -1,0 +1,18 @@
+
+@media screen and ( max-width: 991px) {
+    .navbar-collapse{
+        text-align: center;
+        border: none;
+        background: #fff;
+        margin-top: 5px;
+        padding-bottom: 15px; 
+    }
+    .nav-item a{
+        color: #111 !important;
+    }
+
+    .line{
+        font-size: 40px;
+    }
+
+}

@@ -1,0 +1,429 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 68px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: #343434;
+}
+h1, h2, h3, h4, h5, h6, .logo{
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+section{
+padding:100px 0 70px 0;
+}
+p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+}
+/* ===========NAVBAR=========== */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logo{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+.navbar-nav li {
+    font-size: 14px;
+    margin: 15px 20px 0;
+}
+.nav-item a{
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #fff;
+}
+.navbar-nav .nav-link.active{
+    position: relative;
+}
+.navbar-nav .nav-link.active::after{
+    content: " ";
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+}
+.navbar-dark{
+    --bs-navbar-hover-color: #fff;
+}
+/* ================header============== */
+#Home{
+background-image: linear-gradient(#0009, #0009), url(../imgs/bg.jpg);
+background-position: 0px 0px;
+background-size: cover;
+}
+.line{
+    font-size: 60px;
+}
+.typeing::after{
+    content: " ";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes typing {
+
+    0% {
+        content: " |";
+    }
+
+    35% {
+        content: " Desiger|";
+    }
+
+    36% {
+        content: " |";
+    }
+
+    70% {
+        content: " Larry Daniels|";
+    }
+
+    71% {
+        content: " |";
+    }
+
+    100% {
+        content: " Developer|";
+    }
+} 
+.social-icons span{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+header .container{
+    padding-top: 60px;
+}
+/* ==============ABOUT================ */
+.hero-img{
+    position: relative;
+    padding:0 0 0 30px;
+    margin-bottom: 30px;
+}
+.hero-img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about-line{
+    color:#999;
+    letter-spacing: 2px;
+}
+.progress{
+    height: 25px;
+    background-color:#f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    color:#fff;
+    text-align: center;
+    background-color:#1c1c1c;
+    height: 100%;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+.skill{
+margin-bottom:30px;
+}
+.btn-dark {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1c1c1c;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #1c1c1c;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #1c1c1c;
+}
+.btn-outline-dark {
+    --bs-btn-color: #1c1c1c;
+    --bs-btn-border-color: #1c1c1c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1c1c1c;
+    --bs-btn-hover-border-color: #1c1c1c;
+}
+.about-btn a{
+font-size: 13px;
+margin-top: 20px;
+padding:10px 30px;
+transition: all 0.5s;
+
+}
+
+/* ==============HEAD================ */
+.bg-gray{
+    background-color: #f7f7f7;
+}
+.section-head{
+    margin-bottom: 80px;
+}
+.section-head h3{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+    width: fit-content;
+    margin: 0 auto;
+}
+.section-head h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+/* ==============SERVICES================ */
+.inner {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.inner .icon{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 70px;
+    background-color: #f4f4f4;
+    border-radius: 50%;  
+    transition: all 0.5s; 
+}
+.inner:hover .icon{
+background-color: #1c1c1c;
+color: #eee;
+}
+/*===================PORTFOLIO=======================*/
+.nav-pills .nav-link.active{
+    margin: 0 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    background-color: #fff;
+}
+.nav-pills .nav-link{
+    margin: 0 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+}
+.nav-pills .nav-link.active::after{
+    content: " ";
+    background-color: #222;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+/*==============nav-pills end==============*/
+.work-img{
+    position: relative;
+    overflow: hidden;
+}
+.work-img-overlay{
+position: absolute;
+  inset: 5px;
+background-color: rgba(255, 255, 255, 0.95);
+z-index: 2;
+opacity: 0;
+transform: translateY(10px);
+transition: all 0.5s;
+}
+.work-img:hover .work-img-overlay{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.overlay-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+.overlay-content h6{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    position: relative;
+    transform: translateY(-15px);
+    transition: all 0.5s;
+}
+.work-img:hover .overlay-content h6{
+    transform: translateY(0px);
+}
+.over-icons .icon{
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background-color: #111;
+    color: #eee;
+    line-height: 28px;
+    display: inline-block;
+}
+.over-icons .icon:hover{
+    background-color:transparent;
+    color: #111;
+}
+/*===================Testimonials=======================*/
+.client-img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+.client span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+    margin: 5px 7px;
+}
+/*===================TEAM=======================*/
+.eng{
+    background-color: rgba(52, 52, 52,.8);
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.h{
+    font-size: 25px;
+    font-weight: 500;
+}
+.eng-img{
+position: relative;
+overflow: hidden;
+}
+.social{
+background-color: rgba(255, 255, 255, 0.95);
+position: absolute;   
+inset: 5px; 
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0;
+transform: rotateY(180deg) scale(0.5, 0.5);
+transition: all 0.5s;
+}
+.eng:hover .social{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.social span{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 50%;
+    background:#000;
+    border: 1px solid #000;
+    transition: all 0.5s;
+}
+.social span:hover{
+    background-color: transparent;
+    color: #000;
+}
+.eng-img img{
+    transition: all 0.4s;
+}
+.eng-img:hover img{
+    transform: scale(1.2);
+}
+/*===================CONTACT=======================*/
+.f-group{
+    width: 100%;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 15px;
+}
+textarea{
+    resize: both;
+    overflow: auto;
+    max-height: 160px;
+    max-width: 100%
+}
+.sub{
+    font-size: 13px;
+    padding:10px 30px;
+    transition: all 0.5s;
+}
+/*===================FOOTER=======================*/
+footer{
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
